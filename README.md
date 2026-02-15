@@ -1,76 +1,127 @@
-# AI-Powered GitHub Self-Analysis Dashboard
+Here’s a **clear, brief, copy-and-paste–ready version** of your project description 👇
+
+---
+
+# **AI-Powered GitHub Self-Analysis Dashboard**
 
 ## 🚀 Overview
-An interactive dashboard that analyzes your GitHub profile using local LLMs (Ollama) and traditional data science techniques. Get insights into your coding habits, sentiment, skills, and future activity.
 
-## ✨ Features
-- **Data Collection**: Fetches repositories, commits, and READMEs via GitHub API.
-- **LLM Analysis**: Uses local Llama 3.1 & Mistral models for:
-    - Sentiment Analysis of commit messages.
-    - Skill Extraction from READMEs.
-    - Code Quality Reviews.
-- **Traditional Data Science**:
-    - Clustering of repositories based on stars, forks, and size.
-    - Time-series forecasting of commit activity (Prophet).
-- **Interactive Dashboard**: Streamlit-based UI with Plotly visualizations.
-- **Model Comparison**: Benchmark different local LLMs.
+An interactive dashboard that analyzes your GitHub profile using **local LLMs (Ollama)** and **data science techniques** to provide insights into your coding habits, skills, and activity trends.
+
+---
+
+## ✨ Key Features
+
+### 🔹 Data Collection
+
+* Fetches repositories, commits, and README files via the GitHub API.
+
+### 🔹 LLM-Based Analysis (Ollama)
+
+* Sentiment analysis of commit messages
+* Skill extraction from README files
+* Code quality reviews
+
+### 🔹 Traditional Data Science
+
+* Repository clustering (stars, forks, size)
+* Commit activity forecasting using Prophet
+
+### 🔹 Dashboard
+
+* Interactive Streamlit UI
+* Plotly visualizations
+* Local LLM model comparison (Llama 3.1 vs Mistral)
+
+---
 
 ## 🛠 Prerequisites
-- **Python 3.10+**
-- **Ollama** installed and running.
-    - Pull models: `ollama pull llama3.1`, `ollama pull mistral`
-- **Git**
+
+* Python 3.10+
+* Ollama installed and running
+* Git
+* Pull models:
+
+  ```bash
+  ollama pull llama3.1
+  ollama pull mistral
+  ```
+
+---
 
 ## 📦 Installation
 
-1.  **Clone the repository**:
-    ```bash
-    git clone <repository_url>
-    cd ai-github-dashboard
-    ```
+### 1️⃣ Clone the Repository
 
-2.  **Create a virtual environment**:
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows: venv\Scripts\activate
-    ```
+```bash
+git clone <repository_url>
+cd ai-github-dashboard
+```
 
-3.  **Install dependencies**:
-    ```bash
-    pip install -r requirements.txt
-    ```
+### 2️⃣ Create a Virtual Environment
 
-4.  **Configure Environment**:
-    - Copy `.env.example` to `.env` (optional, can also input in UI).
-    - Set `GITHUB_TOKEN` and `GITHUB_USERNAME`.
+```bash
+python -m venv venv
+source venv/bin/activate   # Windows: venv\Scripts\activate
+```
 
-## 🏃‍♂️ Usage
+### 3️⃣ Install Dependencies
 
-1.  **Start Ollama**:
-    Ensure Ollama is running in the background (`ollama serve`).
+```bash
+pip install -r requirements.txt
+```
 
-2.  **Run the Dashboard**:
-    ```bash
-    streamlit run app/dashboard.py
-    ```
+### 4️⃣ Configure Environment
 
-3.  **Explore**:
-    - Enter your GitHub username and token (if not in `.env`).
-    - Click "Fetch Data".
-    - Navigate tabs for insights.
+* Copy `.env.example` → `.env` (optional)
+* Set:
+
+  * `GITHUB_TOKEN`
+  * `GITHUB_USERNAME`
+
+---
+
+## ▶️ Usage
+
+### Start Ollama
+
+```bash
+ollama serve
+```
+
+### Run the Dashboard
+
+```bash
+streamlit run app/dashboard.py
+```
+
+### Explore
+
+* Enter GitHub username and token
+* Click **Fetch Data**
+* View insights across dashboard tabs
+
+---
 
 ## 📂 Project Structure
-- `app/`: Streamlit dashboard application.
-- `src/`: Core logic modules.
-    - `data_collection.py`: GitHub API fetcher.
-    - `llm_analysis.py`: Ollama integration.
-    - `traditional_ds.py`: Clustering and forecasting.
-- `data/`: Stores fetched JSON data.
-- `notebooks/`: EDA notebooks.
-- `tests/`: Unit tests.
 
-## 🤝 Contributing
-Contributions used to be welcome!
+```
+app/              Streamlit dashboard  
+src/              Core logic modules  
+  ├─ data_collection.py   GitHub API fetcher  
+  ├─ llm_analysis.py       Ollama integration  
+  ├─ traditional_ds.py     Clustering & forecasting  
+data/             Stored JSON data  
+notebooks/         EDA notebooks  
+tests/              Unit tests  
+```
+
+---
 
 ## 📄 License
+
 MIT
+
+---
+
+If you want, I can also make a **short GitHub README version** or a **one-paragraph project summary for your CV/portfolio**.
