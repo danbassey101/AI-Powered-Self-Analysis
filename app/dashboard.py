@@ -308,7 +308,7 @@ try:
                         st.divider()
 
     with tab6:
-        st.header("🎵 GitHub Replay 2025")
+        st.header("💻 GitHub Replay 2025")
         
         user_stats = analyzer.get_user_stats()
         
