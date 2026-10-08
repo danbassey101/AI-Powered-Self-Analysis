@@ -117,11 +117,3 @@ tests/              Unit tests
 ```
 
 ---
-
-## 📄 License
-
-MIT
-
----
-
-If you want, I can also make a **short GitHub README version** or a **one-paragraph project summary for your CV/portfolio**.
